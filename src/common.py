@@ -82,9 +82,9 @@ def plot(X: np.ndarray, mixture: GaussianMixture, post: np.ndarray,
     plt.show()
 
 
-def rmse(X, Y):
+def me(X, Y,number_of_zeros):
     """return loss"""
-    return np.sqrt(np.mean((X - Y)**2))
+    return np.sum(np.abs(X-Y))/(number_of_zeros)
 
 def bic(X: np.ndarray, mixture: GaussianMixture,
         log_likelihood: float) -> float:
