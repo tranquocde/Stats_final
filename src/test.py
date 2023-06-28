@@ -1,6 +1,6 @@
 import numpy as np
-import em
-import common
+import src.em as em
+import src.common as common
 
 X = np.loadtxt("test_incomplete.txt")
 X_gold = np.loadtxt("test_complete.txt")

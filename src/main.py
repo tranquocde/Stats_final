@@ -1,8 +1,8 @@
 import numpy as np
-import kmeans
-import common
-import naive_em
-import em
+import src.kmeans as kmeans
+import src.common as common
+import src.naive_em as naive_em
+import src.em as em
 
 X = np.loadtxt("toy_data.txt")
 
